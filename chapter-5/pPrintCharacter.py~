@@ -1,0 +1,11 @@
+import pprint
+
+message = 'It was a bright and sunny day when Zed said to me,\n
+Richard of Cypher, you are the true king'
+count = {}
+
+for character in message:
+    count.setdefault(character, 0)
+    count[character] = count[character] + 1
+
+pprint.pprint(count)
